@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+    <style>
+        body
+        {
+            margin: 0px;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-around;
+            justify-items: center;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .Henry
+        {
+            position: absolute;
+            top: 490px;
+            left: 630px;
+        }
+        .tetxo_rs
+        {
+            display: none;
+            width: 300px;
+            height: 200px;
+            font-size: 12px;
+            text-align: justify;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: yellow;
+            box-shadow: 1px 1px black;
+            padding: 10px;
+        }
+        .texto_sc
+        {
+            display: none;
+            width: 300px;
+            height: 200px;
+            font-size: 12px;
+            text-align: justify;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: green;
+            box-shadow: 1px 1px black;
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <map name="meu_mapa">
+        <area onmouseleave="esconder();" onmouseover="MostrarTexto('RS');" shape="circle" coords="258,441,20" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank">
+        <area onmouseleave="esconder();" onmouseover="MostrarTexto('SC');" shape="circle" coords="294,411,20" href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank">
+        <area shape="circle" coords="280,374,20" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank">
+        <area shape="circle" coords="314,148,20" href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank">
+        <area shape="circle" coords="382,352,7" href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank">
+        <area shape="circle" coords="363,310,25" href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">
+        <area shape="circle" coords="409,321,7" href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" target="_blank">
+        <area shape="circle" coords="242,324,25" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_blank">
+        <area shape="circle" coords="300,274,20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" target="_blank">
+        <area shape="circle" coords="232,234,40" href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank">
+        <area shape="circle" coords="139,204,20" href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" target="_blank">
+        <area shape="circle" coords="398,228,30" href="https://pt.wikipedia.org/wiki/Bahia" target="_blank">
+        <area shape="circle" coords="318,196,20" href="https://pt.wikipedia.org/wiki/Tocantins" target="_blank">
+        <area shape="circle" coords="266,130,40" href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank">
+        <area shape="circle" coords="117,120,50" href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank">
+        <area shape="circle" coords="43,183,20" href="https://pt.wikipedia.org/wiki/Acre" target="_blank">
+        <area shape="circle" coords="455,211,5" href="https://pt.wikipedia.org/wiki/Sergipe" target="_blank">
+        <area shape="circle" coords="463,198,5" href="https://pt.wikipedia.org/wiki/Alagoas" target="_blank">
+        <area shape="circle" coords="448,179,10" href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank">
+        <area shape="circle" coords="472,167,5" href="https://pt.wikipedia.org/wiki/Para%C3%ADba" target="_blank">
+        <area shape="circle" coords="468,149,5" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" target="_blank">
+        <area shape="circle" coords="430,136,20" href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_blank">
+        <area shape="circle" coords="388,168,20" href="https://pt.wikipedia.org/wiki/Piau%C3%AD" target="_blank">
+        <area shape="circle" coords="361,131,20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" target="_blank">
+        <area shape="circle" coords="277,52,20" href="https://pt.wikipedia.org/wiki/Amap%C3%A1" target="_blank">
+        <area shape="circle" coords="157,46,20" href="https://pt.wikipedia.org/wiki/Roraima" target="_blank">
+        <area shape="circle" coords="327,266,3" href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" target="_blank">
+    </map>
+
+    <img id="Henry" src="boneco.gif" class="Henry" width="80px">
+    <img src="mapa_brasil.jpg" class="Brasil" usemap="#meu_mapa">
+
+    <div id="tetxo_rs" class="tetxo_rs">
+        O Rio Grande do Sul é uma das 27 unidades federativas do Brasil. Está situado na Região Sul e tem por limites o estado de Santa Catarina ao norte, Argentina ao oeste e Uruguai ao sul, além do Oceano Atlântico ao leste. É dividido em 497 municípios e sua área total é de 281 730,223 km², o que equivale a 3,3% da superfície do Brasil, sendo pouco maior que o Equador. Sua capital é o município de Porto Alegre e seu atual governador é Eduardo Leite. As cidades mais populosas são: Porto Alegre, Caxias do Sul, Canoas, Pelotas e Santa Maria. O relevo é constituído por uma extensa baixada, dominada ao norte por um planalto. Antas, Uruguai, Taquari, Ijuí, Jacuí, Ibicuí, Pelotas e Camaquã são os rios principais
+    </div>
+
+    <div id="texto_sc" class="texto_sc">
+        Santa Catarina é uma das 27 unidades federativas do Brasil. Está situada no centro da região Sul do país. Possui como limites: ao norte, com o Paraná, ao sul, com o Rio Grande do Sul. A leste, com o Oceano Atlântico e a oeste, com a província argentina de Misiones. Compreende uma superfície de 95 736,165 km². Com uma população de 6,2 milhões de habitantes, é o décimo estado mais populoso do Brasil. Sua capital é Florianópolis, segunda cidade mais populosa do estado, após Joinville. Além do Espírito Santo, Santa Catarina constitui um dos dois estados cuja capital não é o município com maior número de habitantes
+    </div>
+</body>
+<script>
+    function esconder()
+    {
+        tetxo_rs.style.display = "none";
+        texto_sc.style.display = "none";
+    }
+
+    function MostrarTexto(estado)
+    {
+        if(estado == "RS")
+        {
+            tetxo_rs.style.display = "block";
+        }
+        if(estado == "SC")
+        {
+            texto_sc.style.display = "block";
+        }
+    }
+
+</script>
+</html>
